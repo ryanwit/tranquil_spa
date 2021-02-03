@@ -1,5 +1,30 @@
-/*  */
+/* GLOBAL CSS */
 body {
     font-family: 'Merriweather', serif;
     
+}
+
+img {
+  max-width: 100%;  /*background image max width*/
+}
+
+.feature-bg {
+    background: rgba(255,255,255,0.3); /*grey color*/
+    width: 100vw; /*full width of the browser*/ /*on larger screen the bg will be 60% and on smaller screen the bg will be 100% see media query below*/
+    border-radius: 10px; /*grey color*/
+}
+
+.feature-text {
+    font-size: 2rem;
+    line-height: 4rem; /*height of the lines*/
+}
+
+.header_img {
+    min-height: 25vh; /*meaning the img will always be 25% of the viewbar height */
+}
+
+@media screen and (min-width: 768px) { /*setting a media query to make the width of the bg to 60% on larger screens & we're connecting bootstrap breakpoints*/
+    .feature-bg {
+        width: 60vw; /*on larger screen the bg will be 60% and on smaller screen the bg will be 100%*/
+    }
 }
