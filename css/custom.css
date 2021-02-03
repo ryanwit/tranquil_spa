@@ -23,6 +23,11 @@ img {
     min-height: 25vh; /*meaning the img will always be 25% of the viewbar height */
 }
 
+/* Welcome Section */
+.card-text {
+    font-size: 1.2rem;
+}
+
 @media screen and (min-width: 768px) { /*setting a media query to make the width of the bg to 60% on larger screens & we're connecting bootstrap breakpoints*/
     .feature-bg {
         width: 60vw; /*on larger screen the bg will be 60% and on smaller screen the bg will be 100%*/
