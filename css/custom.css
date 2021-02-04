@@ -42,6 +42,12 @@ img {
     font-size: 1.1em;
 }
 
+/* FOOTER */
+
+a {
+    color: #212529;   
+}
+
 @media screen and (min-width: 768px) { /*setting a media query to make the width of the bg to 60% on larger screens & we're connecting bootstrap breakpoints*/
     .feature-bg {
         width: 60vw; /*on larger screen the bg will be 60% and on smaller screen the bg will be 100%*/
@@ -63,4 +69,17 @@ span {
 
 .card {
     margin-bottom: 0; /*this reset the margin to zero with the larger view - since we wanted to add it when we had smaller screen bc they were layering right on top of one another*/
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        margin-top: 1em;
+    }
+    footer button {
+        margin-top: 1em;
+    }
+    footer .col-sm-4 {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 10px;
+    }
 }
