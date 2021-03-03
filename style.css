@@ -1,4 +1,17 @@
-/* GLOBAL CSS */
+/*
+Theme Name: Tranquil WP
+Theme URI: http://tranquilspatheme.com
+Author: Ryan Witherspoon via Chris Dixon (SkillShare)
+Author URI: http://wordpress.org/
+Description: Tranquil Spa theme for wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  translation-ready, right-sidebar, custom-headers, featured-images, custom-menu
+Text Domain: tranquilwp
+
+*/
+
 body {
     font-family: 'Merriweather', serif;
     

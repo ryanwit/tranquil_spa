@@ -1,79 +1,38 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Google Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.2-web/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-    <title>Tranquil Spa</title>
-  </head>
+/*
+  * the main template file
+*/
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="">Tranquil Spa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+?>
+ 
+ <?php get_header() ?>
 
-<section class="container-fluid"> <!-- container fluid allows the img to stretch full width of the screen and not have the white edges -->
-  <div class="row position-relative d-flex justify-content-center align-items-center text-center"> <!-- jcc: position text in the center of the image aic: moves text to center of the image tc: centers text alignment -->
-    <img src="images/lake.jpg" alt="lake background" class="header-img">
-      <div class="position-absolute feature-bg">  <!-- position absolute will move the text over the image -->
-        
-        <p class="feature-text">FULL RESPONSIVE<br> PREMIUM SPA THEME<br> FOR WORDPRESS</p>
-      </div>
-  
-  </div>
 
-</section>
-
-    </header>
     <!-- py-5 is bootstrap code p-padding y-top and bottom x-left and right "bootstrap>> utilities>> Notation for documentation" -->
     <div class="container-fluid text-center py-5">
       <div class="row">
         <!-- 6 columns for medium devices // offset makes it centered 3 on each side-->
         <div class="col-md-6 offset-md-3">
-          <h3>Welcome to Tranquil Spa</h3>
-          <img src="images/divider-purple.png" alt="divider" class="w-25"> <!--bs documentation setting width to 25%-->
-        </div>
+          <h3>Welcome to Tranquil Spa/h3>
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-purple.png" alt="divider" class="w-25"> <!--bs documentation setting width to 25%-->
+        </div> 
       </div>
       <div class="row mt-4 d-flex justify-content-around"> <!--margin top 4-->
         <div class="col-sm-3"> <!--columns 3 small screens and above-->
-          <img src="images/makeup.jpg" alt="makeup image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/makeup.jpg" alt="makeup image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
           <div class="card-body">
             <p class="card-text">Hair &amp; make up</p> <!--&amp; for &-->
           </div>
         </div> 
         <div class="col-sm-3"> <!--columns 3 small screens and above-->
-          <img src="images/candles.jpg" alt="candles image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/candles.jpg" alt="candles image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
           <div class="card-body">
             <p class="card-text">Spa Facilities</p> <!--&amp; for &-->
           </div>
         </div> 
         <div class="col-sm-3"> <!--columns 3 small screens and above-->
-          <img src="images/retreat.jpg" alt="retreat image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/retreat.jpg" alt="retreat image" class="card-img-top rounded-circle"> <!--bs card image on top with into rounded circle shape-->
           <div class="card-body">
             <p class="card-text">Take a Tour</p> <!--&amp; for &-->
           </div>
@@ -87,7 +46,7 @@
       <div class="row">
         <div class="col-md-6 offset-md-3"> <!-- 6 cols for md devices offset by 3 -->
           <h3 class="text-light">Latest Spa Offers</h3>
-          <img src="images/divider-silver.png" alt="divider" class="pb-4 w-25"> <!--bs padding bottom 4 - setting width to 25%-->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-silver.png" alt="divider" class="pb-4 w-25"> <!--bs padding bottom 4 - setting width to 25%-->
         </div>
       </div>
       <div class="row">
@@ -150,7 +109,7 @@
       <div class="row">
         <div class="col-sm-6 offset-sm-3">
           <h3>About Us</h3>
-          <img src="images/divider-purple.png" alt="divider" class="w-25">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-purple.png" alt="divider" class="w-25">
         </div>
       </div>
       <div class="row mt-2">
@@ -170,12 +129,12 @@
       <div class="row">
         <div class="col-md-6 offset-md-3 text-center">
           <h3 class="text-light">Price List</h3>
-          <img src="images/divider-silver.png" alt="divider" class="pb-4 w-25"> <!-- padding bottom 4 - width 25% -->
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-silver.png" alt="divider" class="pb-4 w-25"> <!-- padding bottom 4 - width 25% -->
         </div>
       </div> 
       <div class="row my-4"> <!-- margin top & bottom 4 -->
         <div class="col-sm-8">
-          <img src="images/massage.jpg" alt="massage picture">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/massage.jpg" alt="massage picture">
         </div>
         <div class="col-sm-4">
           <h4 class="title text-center">Massages</h4>
@@ -201,13 +160,13 @@
           </ul>
         </div>
         <div class="col-sm-8">
-          <img src="images/facial.jpg" alt="facial image" class="">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/facial.jpg" alt="facial image" class="">
         </div>
       </div>
 
       <div class="row my-4"> <!-- margin top & bottom 4 -->
         <div class="col-sm-8">
-          <img src="images/cosmetics.jpg" alt="cosmetics picture">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cosmetics.jpg" alt="cosmetics picture">
         </div>
         <div class="col-sm-4">
           <h4 class="title text-center">Hair &amp; make up</h4>
@@ -222,50 +181,5 @@
       </div>
     </div>  <!-- closing container -->
     
-   <!-- FOOTER SECTION -->
-   <footer class="container-fluid py-5">
-     <div class="row">
-       <div class="col-sm-4">
-         <h5 class="">Stay Connected:</h5>
-         <form class="">
-           <div class="form-row form-group">
-             <div class="col-md-8">
-              <input type="email" class="form-control" placeholder="Email Address">
-             </div>
-             <div class="col-md-4">
-              <button type="submit" class="btn btn-primary">
-                Sign up!
-              <i class="fas fa-angle-double-right"></i> <!--fas - font awesome solid -->
-              </button>
-             </div>
-           </div>
-         </form>
-         <!-- social media icons -->
-         <i class="fab fa-facebook-square fa-2x"></i> <!--fab - font awesome black -->
-         <i class="fab fa-twitter-square fa-2x"></i>
-         <i class="fab fa-instagram fa-2x"></i>
-         <i class="fab fa-pinterest-square fa-2x"></i>
-       </div>
-       <div class="col-sm-4">
-         <h5>Out Setting:</h5>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aperiam ducimus aliquid ratione tenetur consequuntur doloremque, quos quo labore commodi id culpa harum sequi. Quaerat, nulla. Non possimus sequi soluta?Enim praesentium nobis similique mollitia, minus quae tempore incidunt non dolorem neque quidem corrupti iure minima sint beatae ipsam odit consequuntur nemo debitis obcaecati molestias adipisci, dolore explicabo harum! Illum?</p>
-       </div>
-       <div class="col-sm-4">
-         <h5>Navigation</h5>
-         <ul class="list-group">
-           <li class="list-group-item"><a href="blog.html">Blog</a></li>
-           <li class="list-group-item"><a href="contact.html">Contact Us!</a></li>
-           <li class="list-group-item"><a href="">Privacy Policy</a></li>
-          
-         </ul>
-       </div>
-     </div>
-   </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" ></script>
-  
-  </body>
-</html>
+    <?php get_footer() ?>
+   
