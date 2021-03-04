@@ -14,16 +14,21 @@
         <?php if(have_posts() ) : while (have_posts()) : the_post(); ?>
 
           <div>
-            <h2><php</h2>
-            <p>February 05, 2020 by <a href="">Ryan Witherspoon</a></p>
+            <a href="<?php the_permalink(); ?>">
+              <h2> <?php the_title(); ?></h2>
+            </a>
+            <p> <?php echo get_the_date('F j, Y'); ?> by <a href=""><?php the_author(); ?></a></p>
             <div class="pb-2">
               <i class="fas fa-tags"></i>
-              <p class="d-inline">Tagged: news ~ offers</p> <!--keeps p elements in line-->
+          <p class="d-inline"><?php the_tags('Tagged: ', ' ~ '); ?></p> <!--keeps p elements in line-->
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At asperiores sed dignissimos itaque sapiente voluptas commodi facilis, aliquid alias iste officia nam ut, quaerat quam fuga a, provident veritatis voluptatibus?
-            Natus quas consequuntur cupiditate soluta saepe nam deleniti expedita iure velit obcaecati, optio quos repellendus accusamus consectetur quae! Neque inventore quibusdam, magnam officia eos in et numquam quidem sit assumenda.
-            </p>
-          </div>
+              <p><?php the_excerpt() ?></p>
+              <div class="mb-3">
+                <a href="<?php the_permalink(); ?>">
+                  <?php _e('Read more...') ?>
+                </a>
+              </div>
+            </div>
           <?php endwhile; else: ?>
           <nav>
             <ul class="nav">
@@ -68,7 +73,7 @@
     </main> <!--closing container -->
 
  
-      <?php the_content() ?>
+      
     
     
     <p><?php _e('Sorry, no posts matched your criteria'); ?></p>
